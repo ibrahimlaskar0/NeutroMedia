@@ -2,6 +2,9 @@
 
 import * as React from 'react';
 import { motion } from 'framer-motion';
+import pranayImg from '../../assets/pranay.jpeg';
+import yashImg from '../../assets/yash.jpeg';
+import airAsiaImg from '../../assets/air asia mh.jpeg';
 
 interface TestimonialCardProps {
   handleShuffle: () => void;
@@ -48,7 +51,7 @@ export function TestimonialCard({ handleShuffle, testimonial, position, id, auth
       }`}
     >
       <img
-        src={id === 1 ? "/src/assets/pranay.jpeg" : id === 2 ? "/src/assets/yash.jpeg" : id === 3 ? "/src/assets/air asia mh.jpeg" : `https://i.pravatar.cc/128?img=${id}`}
+        src={id === 1 ? pranayImg : id === 2 ? yashImg : id === 3 ? airAsiaImg : `https://i.pravatar.cc/128?img=${id}`}
         alt={`Avatar of ${author}`}
         className="pointer-events-none mx-auto h-32 w-32 rounded-full border-2 border-slate-700 bg-slate-200 object-cover"
       />
